@@ -2,11 +2,12 @@
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     android:orientation="vertical">
 
     <TextView
-        android:text="Fragment First"
+        android:id="@+id/textViewFirst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewFirst" />
+        android:text="Fragment First" />
 </android.support.v4.widget.NestedScrollView>

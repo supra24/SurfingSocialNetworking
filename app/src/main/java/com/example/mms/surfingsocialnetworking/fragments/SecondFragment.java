@@ -1,7 +1,7 @@
 package com.example.mms.surfingsocialnetworking.fragments;
 
-import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,18 +13,18 @@ import com.example.mms.surfingsocialnetworking.R;
  * Created by MMS on 2016-12-20.
  */
 
-public class SecondFragment extends Fragment{
+public class SecondFragment extends Fragment {
 
     private String title;
     private int page;
 
-    public static FirstFragment newInstance(int page, String title) {
-        FirstFragment fragmentFirst = new FirstFragment();
+    public static SecondFragment newInstance(int page, String title) {
+        SecondFragment fragmentSecond = new SecondFragment();
         Bundle args = new Bundle();
         args.putInt("someInt", page);
         args.putString("someTitle", title);
-        fragmentFirst.setArguments(args);
-        return fragmentFirst;
+        fragmentSecond.setArguments(args);
+        return fragmentSecond;
     }
 
     @Override

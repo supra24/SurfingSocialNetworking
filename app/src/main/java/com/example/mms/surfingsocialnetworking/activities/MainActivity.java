@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ToxicBakery.viewpager.transforms.TabletTransformer;
 import com.example.mms.surfingsocialnetworking.R;
 import com.example.mms.surfingsocialnetworking.adapters.MyPagerAdapter;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         fragmentPagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
+        viewPager.setPageTransformer(true, new TabletTransformer());
         viewPager.setAdapter(fragmentPagerAdapter);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
